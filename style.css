@@ -36,7 +36,6 @@
   padding: 0;
 }
 
-
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -80,7 +79,12 @@ h6 {
 
 /* General styles */
 
+*:focus {
+  outline: #000000 solid 2px;
+}
+
 body {
+  background-color: #E2E8F0;
   color: #777777;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -89,15 +93,17 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 150px auto;
+  grid-template-columns: 1fr max(768px, 3fr) 1fr;
 
   margin: 0 auto;
   min-height: 100vh;
   width: min(1200px, 95%);
 }
 
-.avatar-container {}
+.avatar-container {
+  border-radius: 50%;
+  overflow: hidden;
+}
 
 /* Nav styles */
 
@@ -158,45 +164,114 @@ body {
 
 .home-header {
   grid-area: 1 / 2 / 2 / 4;
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 5px -3px #AAAAAA;
+
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem 0.5rem 2rem;
 }
 
-.header {}
+.header {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: 70px;
+}
 
-.header__search-form {}
+.header__search-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
 
-.header__search-button {}
+.header__search-button {
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
 
-.header__search-icon {}
+  border: none;
+  height: 1.5rem;
+  width: 1.5rem;
+}
 
-.header__search-field {}
+.header__search-field {
+  appearance: none;
+  background-color: #E2E8F0;
+  border-radius: 1em;
 
-.header__account-details {}
+  border: none;
+  padding: 0 1em;
+  height: 2rem;
+  width: 75%;
+}
 
-.header__notifications-icon {}
+.header__search-field::-webkit-search-cancel-button {
+  appearance: none;
+}
 
-.header__avatar {}
+.header__account-details {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
 
-.header__user-name {}
+.header__notifications-icon {
+  height: 1.5rem;
+}
 
-.home-header__bottom {}
+.header__avatar {
+  width: 50px;
+}
 
-.home-header__account-details {}
+.header__user-name {
+  color: #000000;
+  font-weight: 700;
+}
 
-.home-header__avatar-container {}
+.home-header__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-.home-header__user-info {}
+  height: 100px;
+}
 
-.home-header__greeting {}
+.home-header__account-details {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 70px 300px;
+  grid-template-rows: 70px;
+  align-items: center;
+}
 
-.home-header__user-name {}
+.home-header__user-info {
+  color: #000000;
+  font-weight: 700;
+}
 
-.home-header__projects-controls {}
+.home-header__user-name {
+  font-size: 1.5rem;
+}
 
-.home-header__new-project-btn {}
+.home-header__projects-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
-.home-header__upload-project-btn {}
+.home-header__button {
+  appearance: none;
+  background-color: #1992D4;
+  border-radius: 2em;
+  color: #FFFFFF;
+  cursor: pointer;
 
-.home-header__share-project-btn {}
+  border: none;
+  height: 35px;
+  width: 80px;
+}
 
 /* Main styles */
 
