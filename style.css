@@ -93,7 +93,7 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr max(768px, 3fr) 1fr;
+  grid-template-columns: 1fr 4fr 1.75fr;
 
   margin: 0 auto;
   min-height: 100vh;
@@ -103,6 +103,12 @@ body {
 .avatar-container {
   border-radius: 50%;
   overflow: hidden;
+}
+
+.section-title {
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 /* Nav styles */
@@ -165,7 +171,7 @@ body {
 .home-header {
   grid-area: 1 / 2 / 2 / 4;
   background-color: #FFFFFF;
-  box-shadow: 0 5px 5px -3px #AAAAAA;
+  box-shadow: 0 5px 5px -3px #D2D2D2;
 
   display: flex;
   flex-direction: column;
@@ -279,8 +285,6 @@ body {
   grid-area: 2 / 2 / 3 / 3;
 }
 
-.section-title {}
-
 .home-main__projects-container {}
 
 .project-preview {}
@@ -309,30 +313,62 @@ body {
 
 .aside {
   grid-area: 2 / 3 / 3 / 4;
+  padding: 2rem 0;
 }
 
-.section-title {}
+.aside__section {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px -3px #D2D2D2;
 
-.aside__announcements {}
+  margin-top: 0.5rem;
+  padding: 1rem;
+}
 
-.aside__section {}
+.aside__section:not(:last-child) {
+  margin-bottom: 2rem;
+}
 
-.aside__announcement {}
+.aside__announcements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-.aside__announcement-title {}
+.aside__announcement {
+  border-bottom: 1px solid #D2D2D2;
+  padding: 10px 10px;
+}
 
-.aside__announcement-text {}
+.aside__announcement:last-of-type {
+  border-bottom: none;
+}
 
-.aside__trending {}
+.aside__announcement-title {
+  color: #000000;
+  font-size: 1rem;
+}
 
-.aside__trending-item {}
+.aside__announcement-text {
+  font-size: 0.9rem;
+}
 
-.aside__trending-item-avatar-container {}
+.aside__trending {
+  display: grid;
+  gap: 20px;
+  grid-template-rows: repeat(4, 50px);
+}
 
-.aside__trending-item-avatar {}
+.aside__trending-item {
+  display: flex;
+  gap: 1rem;
+}
 
-.aside__trending-item-info {}
+.aside__trending-item-avatar {
+  width: 50px;
+}
 
-.aside__trending-user-id {}
-
-.aside__trending-user-project {}
+.aside__trending-user-id {
+  color: #000000;
+}
