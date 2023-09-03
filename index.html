@@ -69,9 +69,47 @@
         </div>
       </div>
     </nav>
-    <header class="header">
-
-    </header>
+    <div class="home-header">
+      <header class="header">
+        <form class="header__search-form" action="https://www.google.com/search"
+          method="get">
+          <button class="header__search-button">
+            <img class="header__search-icon"
+              src="./images/icons/magnifying-glass.svg" alt="Click to search">
+          </button>
+          <input class="header__search-field" type="search" name="q"
+            autocomplete="off" placeholder="Try me!">
+        </form>
+        <div class="header__account-details">
+          <img class="header__notifications-icon"
+            src="./images/icons/ringing-bell.svg" alt="Notifications">
+          <div class="avatar-container">
+            <img class="header__avatar" src="./images/avatars/avatar-cat.jpg"
+              alt="Your avatar">
+          </div>
+          <p class="header__user-name">Morgan Oakley</p>
+        </div>
+      </header>
+      <div class="home-header__bottom">
+        <div class="home-header__account-details">
+          <div class="avatar-container home-header__avatar-container">
+            <img src="./images/avatars/avatar-cat.jpg" alt="Your avatar">
+          </div>
+          <div class="home-header__user-info">
+            <p class="home-header__greeting">Hi there,</p>
+            <p class="home-header__user-name">Morgan Oakley (@morgan)</p>
+          </div>
+        </div>
+        <div class="home-header__projects-controls">
+          <button class="home-header__new-project-btn"
+            type="button">New</button>
+          <button class="home-header__upload-project-btn"
+            type="button">Upload</button>
+          <button class="home-header__share-project-btn"
+            type="button">Share</button>
+        </div>
+      </div>
+    </div>
     <main class="main">
 
     </main>
