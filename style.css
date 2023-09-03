@@ -94,7 +94,9 @@ body {
 
 /* Nav styles */
 
-.nav {}
+.nav {
+  grid-area: 1 / 1 / 3 / 2;
+}
 
 .nav__title {}
 
@@ -112,7 +114,9 @@ body {
 
 /* Header styles */
 
-.home-header {}
+.home-header {
+  grid-area: 1 / 2 / 2 / 4;
+}
 
 .header {}
 
@@ -151,3 +155,67 @@ body {
 .home-header__upload-project-btn {}
 
 .home-header__share-project-btn {}
+
+/* Main styles */
+
+.home-main {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.section-title {}
+
+.home-main__projects-container {}
+
+.project-preview {}
+
+.project-preview__description {}
+
+.project-preview__title {}
+
+.project-preview__keynote {}
+
+.project-preview__controls {}
+
+.project-preview__add-to-favorites-btn {}
+
+.project-preview__add-to-favorites-icon {}
+
+.project-preview__watch-later-btn {}
+
+.project-preview__watch-later-icon {}
+
+.project-preview__clone-project-btn {}
+
+.project-preview__clone-project-icon {}
+
+/* Aside styles */
+
+.aside {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.section-title {}
+
+.aside__announcements {}
+
+.aside__section {}
+
+.aside__announcement {}
+
+.aside__announcement-title {}
+
+.aside__announcement-text {}
+
+.aside__trending {}
+
+.aside__trending-item {}
+
+.aside__trending-item-avatar-container {}
+
+.aside__trending-item-avatar {}
+
+.aside__trending-item-info {}
+
+.aside__trending-user-id {}
+
+.aside__trending-user-project {}
