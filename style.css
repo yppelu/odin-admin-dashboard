@@ -96,7 +96,6 @@ body {
   grid-template-columns: 1fr 4fr 1.75fr;
 
   margin: 0 auto;
-  min-height: 100vh;
   width: min(1200px, 95%);
 }
 
@@ -241,7 +240,7 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  height: 100px;
+  height: max-content;
 }
 
 .home-header__account-details {
