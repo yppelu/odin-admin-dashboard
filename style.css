@@ -283,42 +283,60 @@ body {
 
 .home-main {
   grid-area: 2 / 2 / 3 / 3;
+  padding: 2rem 1rem 1rem 1rem;
 }
 
-.home-main__projects-container {}
+.home-main__projects-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
-.project-preview {}
+  margin-top: 0.5rem;
+}
 
-.project-preview__description {}
+.project-preview {
+  background-color: #FFFFFF;
+  border-radius: 10px;
 
-.project-preview__title {}
+  display: grid;
+  gap: 1rem;
+  grid-template: 1fr max-content / 1fr;
 
-.project-preview__keynote {}
+  border-left: 8px solid #F0B429;
+  padding: 2rem 1rem;
+}
 
-.project-preview__controls {}
+.project-preview__title {
+  color: #000000;
+  font-size: 1.1rem;
+}
 
-.project-preview__add-to-favorites-btn {}
+.project-preview__controls {
+  justify-self: end;
+  display: flex;
+  gap: 1rem;
+}
 
-.project-preview__add-to-favorites-icon {}
+.project-preview__control-btn {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 
-.project-preview__watch-later-btn {}
-
-.project-preview__watch-later-icon {}
-
-.project-preview__clone-project-btn {}
-
-.project-preview__clone-project-icon {}
+  height: 1.5rem;
+  width: 1.5rem;
+}
 
 /* Aside styles */
 
 .aside {
   grid-area: 2 / 3 / 3 / 4;
-  padding: 2rem 0;
+  padding: 2rem 0 1rem 0;
 }
 
 .aside__section {
   background-color: #FFFFFF;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 5px 5px -3px #D2D2D2;
 
   margin-top: 0.5rem;
