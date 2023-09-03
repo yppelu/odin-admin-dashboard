@@ -71,3 +71,83 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+/* General styles */
+
+body {
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 150px auto;
+
+  margin: 0 auto;
+  min-height: 100vh;
+  width: min(1200px, 95%);
+}
+
+.avatar-container {}
+
+/* Nav styles */
+
+.nav {}
+
+.nav__title {}
+
+.nav__title-icon {}
+
+.nav__title-text {}
+
+.nav__block {}
+
+.nav__item {}
+
+.nav__item-icon {}
+
+.nav__item-name {}
+
+/* Header styles */
+
+.home-header {}
+
+.header {}
+
+.header__search-form {}
+
+.header__search-button {}
+
+.header__search-icon {}
+
+.header__search-field {}
+
+.header__account-details {}
+
+.header__notifications-icon {}
+
+.header__avatar {}
+
+.header__user-name {}
+
+.home-header__bottom {}
+
+.home-header__account-details {}
+
+.home-header__avatar-container {}
+
+.home-header__user-info {}
+
+.home-header__greeting {}
+
+.home-header__user-name {}
+
+.home-header__projects-controls {}
+
+.home-header__new-project-btn {}
+
+.home-header__upload-project-btn {}
+
+.home-header__share-project-btn {}
